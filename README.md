@@ -18,8 +18,7 @@ Flask Custom Runtime for App Engine
 
 1. `pip install -r requirements.txt`
 2. `docker build -t docker-flask-app .`
-3. `docker run -ti -p 8000:8080 docker-flask-app`
-	a. maps port 8080 on the container to port 8000 on your machine
+3. `docker run -ti -p 8000:8080 docker-flask-app` (maps port 8080 on the container to port 8000 on your machine)
 
 Visit localhost:8000
 
@@ -29,9 +28,9 @@ Through local development, you will constantly build and run new containers. Thi
 
 A temporary solution to this is deleting all containers and images before you run out of disk space. It is HIGHLY RECOMMENDED that you run the following commands after any rigorous coding session:
 
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
-docker rmi $(docker images -a -q)
+1. `docker stop $(docker ps -a -q)`
+2. `docker rm $(docker ps -a -q)`
+3. `docker rmi $(docker images -a -q)`
 
 Then restart the docker service on your computer.
 
