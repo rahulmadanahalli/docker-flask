@@ -13,11 +13,6 @@ Flask Custom Runtime for App Engine
 
 - Install Docker
 
-## Local Development
-
-1. export FLASK_APP=run.py
-2. flask run --host=0.0.0.0 -p 8080
-
 
 ## Local Development With Docker
 
