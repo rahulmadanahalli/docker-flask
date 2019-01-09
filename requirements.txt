@@ -1,0 +1,8 @@
+Flask==0.12.2
+Flask-Testing>=0.4.1
+gunicorn==19.7.1
+google-api-python-client
+google-cloud
+pytest
+mock
+requests==2.18.4
